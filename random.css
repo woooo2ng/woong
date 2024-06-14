@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('61921-OA96E9-847.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#wheel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#wheel {
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #ffffe0;
+}
+
+#arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid red;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+#input-area {
+    text-align: center;
+    margin: 20px;
+}
+
+#spin-button {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 100px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추첨 돌림판</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+    <div id="input-area">
+        <input type="text" id="item-input" placeholder="항목을 입력하세요">
+        <button onclick="addItem()">추가</button>
+    </div>
+    <div id="wheel-container">
+        <div id="arrow"></div>
+        <canvas id="wheel"></canvas>
+        <button id="spin-button" onclick="spinWheel()">추첨하기</button>
+        </div>
+    </div>
+
+    <script src="random.js"></script>
+</body>
+</html>
